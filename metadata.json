@@ -1,0 +1,6 @@
+{
+  "name": "Aura & Bloom Wedding Celebration",
+  "description": "An elegant wedding celebration website with an interactive 3D background, guest RSVP tracking, photo galleries, countdown timer, music player, gift registry, and secure admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

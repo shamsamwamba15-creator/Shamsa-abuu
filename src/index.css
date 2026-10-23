@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-script: 'Alex Brush', cursive;
+  --font-arabic: 'Amiri', 'Traditional Arabic', serif;
+  
+  /* Soft Sage & Champagne Palette from attached moodboard */
+  --color-sage: #768e77;
+  --color-sage-dark: #587059;
+  --color-sage-deep: #1d2c20;
+  --color-sage-mist: #bcc8bc;
+  --color-sage-light: #e5ece5;
+  --color-sage-tint: #f0f4f0;
+
+  --color-ivory: #fbf8f2;
+  --color-ivory-warm: #f5efe3;
+  --color-ivory-card: #ffffff;
+  
+  --color-champagne: #d7c6a9;
+  --color-champagne-light: #ece3d3;
+  --color-champagne-gold: #c5a976;
+  
+  --color-beige: #d4c2b2;
+  --color-beige-light: #ece2da;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    background-color: var(--color-ivory);
+    color: var(--color-sage-deep);
+  }
+  
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-serif);
+    color: var(--color-sage-deep);
+  }
+
+  .font-arabic {
+    font-family: var(--font-arabic);
+  }
+}
+
+/* Custom delicate scrollbar in soft sage mist & champagne */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fbf8f2;
+}
+::-webkit-scrollbar-thumb {
+  background: #bcc8bc;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #768e77;
+}
